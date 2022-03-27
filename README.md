@@ -37,7 +37,7 @@ This project provides three different types of reporting features.
 ### Command line output
 When tests are executed simply using "npm run cypress-run", the command line prints the following output after the successfull execution of tests.
 
-![image](https://user-images.githubusercontent.com/17128685/160298061-917d7b2a-6bec-4d8d-80f0-8a9568341870.png)
+![160298061-917d7b2a-6bec-4d8d-80f0-8a9568341870](https://user-images.githubusercontent.com/41230361/160299125-80d2c0da-1290-4fc3-bae1-44ee000edd34.jpg)
 
 ### Cucumber HTML Test Report
 ```
@@ -46,7 +46,7 @@ npm run cypress-report
 
 An HTML report is generated in the cypress/reports directory that gives the following output. 
 
-![image](https://user-images.githubusercontent.com/17128685/160298099-eb8ff357-3f09-4d60-ab86-9623c555be4a.png)
+![160298099-eb8ff357-3f09-4d60-ab86-9623c555be4a](https://user-images.githubusercontent.com/41230361/160299164-d87f95a8-750e-4d87-9021-67a91216b60b.jpg)
 
 Report is generated using JSON + HTML and it is very useful if we want to integerate our project test results output with any system (e.g: configure the test with CI tool and generate the report using pipeline and email it to the user).
 
@@ -56,10 +56,15 @@ Configure Cypress Dashboard with your project using instructions below.
 - Go to [Cypress Dashboard](https://dashboard.cypress.io/login) & create account 
 - Create a new project
 - Copy the generated Project Id & Project key
-- Configure the Project Id in cypress.json file
+- Configure the Project Id in cypress.json
+  
+  ![160297121-c27b0175-9983-4737-a46e-b5b3701961f7](https://user-images.githubusercontent.com/41230361/160299025-c95793d9-124d-405d-a01a-dbdbb0115ce7.jpg)
 
-![image](https://user-images.githubusercontent.com/41230361/160297121-c27b0175-9983-4737-a46e-b5b3701961f7.png)
+- Configure the Project key in package.json
+  
+  ![160297198-26444363-2721-44a6-8438-a421281c5d50](https://user-images.githubusercontent.com/41230361/160299050-af4441bb-bfcf-4698-9b97-1762f05bfe62.jpg)
 
-- Configure the Project key in package.json file
-
-![image](https://user-images.githubusercontent.com/41230361/160297198-26444363-2721-44a6-8438-a421281c5d50.png)
+Execute tests on Cypress Dashboard using
+```
+npm run cypress-dashboard
+```
