@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.json",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": true,
+    "target": "es5",
+    "types": [
+      "node,cypress"
+    ],
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/*.ts",
+    "integration/*.ts",
+    "support/*.ts"
+  ]
+}
