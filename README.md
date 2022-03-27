@@ -1,6 +1,9 @@
 # cypress-cucumber-typescript
 Cypress Automation framework for Typescript based apps using BDD-Gherkin style (Cucumber) 
 
+## Purpose of the project
+Cypress awesomness and its power can be enhanced if it is integerated with BDD (Cucumber) so that the tests can be written in natural language and test definitions can be written in Typescript. This project combines a lot of different features into single one repo with basic executable tests to demonstrate how Cypress+Angular(Typescript)+Cucumber works hand in hand.
+
 ## Install
 ```
 npm install
