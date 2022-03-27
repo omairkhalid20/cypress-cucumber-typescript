@@ -34,6 +34,9 @@ Configure cypress dashboard in your test using below steps
 - Create a new project
 - Copy the generated Project Id & Project key
 - Configure the Project Id in cypress.json file
-![image](https://user-images.githubusercontent.com/41230361/160297121-c27b0175-9983-4737-a46e-b5b3701961f7.png)
+
+![image](https://user-images.githubusercontent.com/41230361/160297121-c27b0175-9983-4737-a46e-b5b3701961f7.png | width=350)
+
 - Configure the Project key in package.json file
-![image](https://user-images.githubusercontent.com/41230361/160297198-26444363-2721-44a6-8438-a421281c5d50.png)
+
+![image](https://user-images.githubusercontent.com/41230361/160297198-26444363-2721-44a6-8438-a421281c5d50.png | width=350)
