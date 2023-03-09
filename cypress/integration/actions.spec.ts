@@ -9,15 +9,18 @@ describe('Main Block', () => {
     cy.visit('https://example.cypress.io/todo')
 
     //Simple Type
-    cy.get('[data-test="new-todo"]').type('Samia Saleem');
+    cy.get('[data-test="new-todo"]').type('Trying custom commands');
 
     //Remove
     cy.get('[data-test="new-todo"]').clear();
 
     //Simple Type + Action
-    cy.get('[data-test="new-todo"]').type('Samia{enter}');
+    cy.get('[data-test="new-todo"]').type('Samia Saleem{enter}');
 
     //Assertion
-    cy.get('.todo-list li').last().should('have.text', 'Samia');
+    cy.get('.todo-list li').last().should('have.text', 'Samia Saleem');
+
+    //Custom Command
+    cy.delete('Samia Saleem');
   })
 })
