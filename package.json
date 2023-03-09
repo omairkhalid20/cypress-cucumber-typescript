@@ -10,7 +10,7 @@
     "cypress-run": "cypress run",
     "cypress-open": "cypress open",
     "cypress-report": "node cucumber-html-report.js",
-    "cypress-dashboard": "npx cypress run --record --key f4466038-70c2-4688-9ed9-106bf013cd73"
+    "cypress-dashboard": "npx cypress run --record --key 7939fc5d-b42a-4aa2-be29-16eeb52f4ae3"
   },
   "private": true,
   "dependencies": {

@@ -1,7 +1,7 @@
 {
     "baseUrl": "https://www.cypress.io/blog/",
     "$schema": "https://on.cypress.io/cypress.schema.json",
-    "projectId": "a7bq2k",
+    "projectId": "esyku6",
     "video": false,
     "watchForFileChanges": true,
     "experimentalStudio": true,
@@ -10,7 +10,7 @@
     "viewportHeight": 1080,
     "trashAssetsBeforeRuns": true,
     "env": {
-        "TAGS": "(not @Ignore)"
+        "TAGS": "(@this and not @Ignore)"
     }
 }
  
