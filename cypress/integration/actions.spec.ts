@@ -3,11 +3,30 @@
 // cypress with bdd
 //
 // ***********************************************************
+beforeEach(() => {
+  cy.visit('https://example.cypress.io/todo')
+})
 
-describe('Main Block', () => {
+describe('Queriying Elements', () => {
+  it('Ussing CSS selectors tag name, class, ID, attributes', () => {
+    cy.get('header.header h1').should('have.text', 'todos')
+  })
+
+  it('Using data attributes', () => {
+    cy.get('[data-test="new-todo"]')
+  })
+
+  it('Using Cypress-specific selectors', () => {
+    cy.get('.filters > :nth-child(2) > a').click();
+  })
+
+  it('Using Chain Commands', () => {
+    cy.get('label').contains('Walk the dog').parents('.view').find('button').invoke('show').click();
+  })
+})
+
+describe('Cypress Custom Commands',()=>{
   it('First Test Case', () => {
-    cy.visit('https://example.cypress.io/todo')
-
     //Simple Type
     cy.get('[data-test="new-todo"]').type('Trying custom commands');
 
@@ -17,10 +36,10 @@ describe('Main Block', () => {
     //Simple Type + Action
     cy.get('[data-test="new-todo"]').type('Samia Saleem{enter}');
 
-    //Assertion
+    // //Assertion
     cy.get('.todo-list li').last().should('have.text', 'Samia Saleem');
 
-    //Custom Command
-    cy.delete('Samia Saleem');
+    // //Custom Command
+    cy.clickOnCross('Samia Saleem');
   })
 })
