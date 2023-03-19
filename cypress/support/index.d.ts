@@ -19,6 +19,6 @@
 
 declare namespace Cypress {
     interface Chainable {
-        clickOnCross(text: string): any;
+        delete(text: string): any;
     }
 }

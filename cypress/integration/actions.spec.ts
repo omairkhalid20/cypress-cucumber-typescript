@@ -25,7 +25,7 @@ describe('Queriying Elements', () => {
   })
 })
 
-describe('Cypress Custom Commands',()=>{
+describe('Adding a new item to todo list',()=>{
   it('First Test Case', () => {
     //Simple Type
     cy.get('[data-test="new-todo"]').type('Trying custom commands');

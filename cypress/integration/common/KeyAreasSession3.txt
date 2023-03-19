@@ -1,0 +1,14 @@
+Session 3
+
+- Data test ids
+    why DT are important
+    how to use data tests
+
+- Static waits
+    static waits in cypress 
+    
+- Fixtures
+
+- Interception
+
+- Dynamic waits

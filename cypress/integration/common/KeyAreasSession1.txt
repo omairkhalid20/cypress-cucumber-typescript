@@ -1,0 +1,68 @@
+Session 1
+
+Important Links
+https://github.com/omairkhalid20/cypress-cucumber-typescript
+https://www.cypress.io/
+https://example.cypress.io/todo
+https://cloud.cypress.io/organizations/38498eb6-62b9-4fe7-9955-06a9813535b6/projects
+
+Terminologies'
+  - Commands
+  - Assertions
+  - Fixtures (test data)
+  - Hooks
+  - Selectors
+
+Project Structure
+cypress/
+  ├── fixtures/        # External data files for the tests
+  ├── integration/     # Test files (specs)
+  ├── plugins/         # Cypress plugins
+  ├── support/         # Custom commands and other utilities
+  ├── screenshots/     # Screenshots taken during test runs
+  ├── videos/          # Videos of test runs
+  └── cypress.json     # Cypress configuration file
+
+Cypress configuration
+- Cypress.json
+
+Cypress Commands
+- Default
+- Custom
+
+Querying Elements
+- Get Simple Elements
+- Chained Elements
+- Demo
+
+Actions
+- Click
+- Force Click
+
+Assertions
+  - should - Example: .should('have.text', 'Hello, World!');
+  - expect - Example: expect(myValue).to.be.greaterThan(10);
+  - assert - Example: assert.include(text, 'Hello');
+
+Hooks
+ - before: runs before all tests in the current describe block.
+ - beforeEach: runs before each test in the current describe block.
+ - after: runs after all tests in the current describe block.
+ - afterEach: runs after each test in the current describe block.
+
+ Assignment
+-----------------------------------------------------------------------------------
+
+
+Task:
+1. go to https://leetcode.com/problem-list/challenges-for-new-users/?page=1
+2. verify the page title
+3. heading should contain Challenege for new users
+4. count rows in a table should equal 8
+5. Get any random row and verify the its Acceptance column should contain some value
+6. select difficulty dropdown apply filtering for all the 3 levels and on filtering verify from table rows are filtered
+    e.g. for medium there should be no data, for hard verify table rows count and the value in the difficulty column should be hard only for all rows
+7. change difficulty level and tags should contain that difficulty level
+8. Verify URL should contain that selected difficulty level
+9. cross the tag and verify impact
+apply status tag e.g. complete and then click reset button and all filters should be removed\

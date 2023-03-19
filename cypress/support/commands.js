@@ -26,6 +26,6 @@
 /// <reference types="cypress"/> 
 
 
-Cypress.Commands.add('clickOnCross', (text) => {
+Cypress.Commands.add('delete', (text) => {
     cy.get('label').contains(text).parents('.view').find('button').invoke('show').click();
 })

@@ -1,0 +1,43 @@
+Session 2
+
+Prerequistes: 
+Introduction to Behavior Driven Development (BDD)
+Gherkin Syntax
+
+- Dependencies
+cypress-cucumber-preprocessor
+
+Project Structure
+├── cypress/
+│   ├── integration/
+│   │   ├── cucumber/
+│   │   │   ├── feature_file.feature
+│   │   │   ├── step_definitions.js
+├── cypress.json
+├── package.json
+├── cypress/plugins/index.js
+
+
+--------------
+
+.feature -> Scenario -> Steps(Given,  When, Then) 
+step Definitions
+
+
+Feature feature_file
+
+Writing Step Definitions
+
+Background
+
+Tagging in Tests
+
+Hooks
+
+Data Tables & Examples
+- Hashes: data table into an array of objects
+- List
+- Map
+
+Reports
+- Cucumber HTML Reporter
